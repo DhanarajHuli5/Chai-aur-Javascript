@@ -1,0 +1,22 @@
+
+
+1. **Promise Creation and Resolution:**
+   - Three promises are created using the `Promise` constructor.
+   - `promiseOne` and `promiseThree` resolve after 1 second and log messages.
+   - `promiseFour` conditionally resolves with an object or rejects with an error message.
+
+2. **Promise Chaining:**
+   - `promiseFour` is chained with `.then()` and `.catch()` handlers.
+   - Username is logged if resolved, else the error message is caught.
+
+3. **Async/Await with Promises:**
+   - `promiseFive` is similar to `promiseFour` but is consumed using `async/await` in the function `consumePromiseFive()`.
+
+4. **Fetch API:**
+   - Code snippets demonstrate fetching data from an API (`jsonplaceholder.typicode.com/users`).
+   - The first example uses `async/await` syntax.
+   - The second example uses `.then()` syntax for handling promises with `fetch`.
+
+Notes:
+- The commented-out `getAllUsers()` function uses `fetch` with `async/await` but is not executed.
+- Both `consumePromiseFive()` and the `fetch` examples handle errors gracefully using `try/catch` and `.catch()` respectively.
